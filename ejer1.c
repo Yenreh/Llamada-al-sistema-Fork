@@ -25,12 +25,12 @@ int main(char *argc, char ** argv){
         
         pid_t pid = fork();
         if(!pid){
-		x=2;
+		x=9;
 		printf("Soy el hijo, mi pid es %d y X tiene el valor de %d para mi\n", getpid(), x);
 	}
 	else{
 		wait(NULL);
-		x=3;
+		x=99;
 		printf("Soy el padre, mi pid es %d y X tiene el valor de %d para mi\n", getpid(), x);
 	}
 
